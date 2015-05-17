@@ -1,0 +1,42 @@
+\title[The Aalborg Beamer Theme]% optional, use only with long paper titles
+{The Aalborg Beamer Theme}
+
+\subtitle{v.\ 1.3.0}  % could also be a conference name
+
+\date{\today}
+
+\author[Jesper Kjær Nielsen] % optional, use only with lots of authors
+{
+  Jesper Kjær Nielsen\\
+  \href{mailto:jkn@es.aau.dk}{{\tt jkn@es.aau.dk}}
+}
+% - Give the names in the same order as they appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation. See the beamer manual for an example
+
+\institute[
+%  {\includegraphics[scale=0.2]{aau_segl}}\\ %insert a company, department or university logo
+  Dept.\ of Electronic Systems\\
+  Aalborg University\\
+  Denmark
+] % optional - is placed in the bottom of the sidebar on every slide
+{% is placed on the bottom of the title page
+  Department of Electronic Systems\\
+  Aalborg University\\
+  Denmark
+
+  %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
+}
+
+% specify the logo in the top right/left of the slide
+\pgfdeclareimage[height=1cm]{mainlogo}{figuras/aau_logo_new} % placed in the upper left/right corner
+\logo{\pgfuseimage{mainlogo}}
+
+% specify a logo on the titlepage (you can specify additional logos an include them in
+% institute command below
+\pgfdeclareimage[height=1.5cm]{titlepagelogo}{figuras/aau_logo_new} % placed on the title page
+%\pgfdeclareimage[height=1.5cm]{titlepagelogo2}{figuras/aau_logo_new} % placed on the title page
+\titlegraphic{% is placed on the bottom of the title page
+  \pgfuseimage{titlepagelogo}
+%  \hspace{1cm}\pgfuseimage{titlepagelogo2}
+}
